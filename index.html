@@ -1,0 +1,95 @@
+<script>
+/*linea que permite escribir*/
+document.write('Hola');//escribo texto hola
+document.write('<br>');//escribo una etiqueta html de salto de línea en el texto (retorno de carro)
+document.write('Soy Jennyfer y este es mi primer programa con JavaScript en este curso');
+document.write('<br>');
+document.write('<br>');
+document.write("Hagamos operaciones para conseguir el área y el perímetro de las siguientes figuras:");
+document.write('<br>');
+document.write('Círculo');
+document.write('<br>');
+document.write('Rombo');
+document.write('<br>');
+document.write('Romboide');
+document.write('<br>');
+document.write('<br>');
+
+/*creo variables*/
+var radiocirculo;
+var diagonalmarombo;
+var diagonalmerombo;
+var ladorombo
+var ladoaromboide
+var ladobromboide
+var alturaromboide
+
+/*pido datos en un dialogo del explorador*/
+radiocirculo=prompt ('CÍRCULO. dame el radio del círculo:');//pido radio del círculo
+diagonalmarombo=prompt ('ROMBO. dame la diagonal mayor del rombo:')//pido diagonal mayor del rombo
+diagonalmerombo=prompt ('ROMBO. dame la diagonal menor del rombo:')//pido diagonal menor del rombo
+ladorombo=prompt ('ROMBO. dame un lado del rombo:');
+ladoaromboide=prompt ('ROMBOIDE. dame el lado A del romboide:')//pido lado a del romboide
+ladobromboide=prompt ('ROMBOIDE. dame el lado B del romboide:')//pido lado b del romboide
+alturaromboide=prompt ('ROMBOIDE. dame la altura del romboide:')//pido altura del romboide
+
+/*convierto valores a valores numericos para poder hacer operaciones*/
+radiocirculo=parseInt(radiocirculo);
+diagonalmarombo=parseInt(diagonalmarombo);
+diagonalmerombo=parseInt(diagonalmerombo);
+ladorombo=parseInt(ladorombo);
+ladoaromboide=parseInt(ladoaromboide);
+ladobromboide=parseInt(ladobromboide);
+alturaromboide=parseInt(alturaromboide);
+
+/*hago operaciones*/
+//hago calculo del perímetro del circulo
+var perimetrocirculo=((3.14*2)*radiocirculo);
+//hago calculo del area del circulo
+var areacirculo=(3.14*(radiocirculo*radiocirculo));
+//hago calculo del perímetro del rombo
+var perimetrorombo=ladorombo+ladorombo+ladorombo+ladorombo
+//hago calculo del area del rombo
+var arearombo=((diagonalmarombo*diagonalmerombo)/2);
+//hago calculo del perímetro del romboide
+var perimetroromboide=((ladoaromboide+ladobromboide)*2);
+//hago calculo del area del romboide
+var arearomboide=(ladobromboide*alturaromboide);
+
+/*escribo resultados*/
+document.write('CÍRCULO');
+document.write('<br>');
+document.write('El área del círculo es:');
+document.write(areacirculo);
+document.write('<br>');
+document.write('El perímetro del círculo es: ');
+document.write(perimetrocirculo);
+document.write('<br>');
+document.write('<br>');
+document.write('ROMBO');
+document.write('<br>');
+document.write('El área del rombo es: ');
+document.write(arearombo);
+document.write('<br>');
+document.write('El perímetro del rombo es: ');
+document.write(perimetrorombo);
+document.write('<br>');
+document.write('<br>');
+document.write('ROMBOIDE');
+document.write('<br>');
+document.write('El área del romboide es: ');
+document.write(arearomboide);
+document.write('<br>');
+document.write('El perímetro del romboide es: ');
+document.write(perimetroromboide);
+document.write('<br>');
+document.write('<br>');
+document.write('<br>');
+/*datos escolares*/
+document.write('Jennyfer Soriano Vera');
+document.write('<br>');
+document.write('Grupo Q');
+document.write('<br>');
+document.write('Desarrollo de videojuegos')
+
+</script>
